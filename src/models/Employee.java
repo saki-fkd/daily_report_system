@@ -1,6 +1,6 @@
 package models;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -63,6 +63,12 @@ public class Employee {
     public Integer getId(){
         return id;
     }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+
     public String getCode() {
         return code;
     }
