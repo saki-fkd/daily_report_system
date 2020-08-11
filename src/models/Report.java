@@ -65,7 +65,7 @@ public class Report {
 
  }
 
- public Employee getEnployee(){
+ public Employee getEmployee(){
      return employee;
 
  }

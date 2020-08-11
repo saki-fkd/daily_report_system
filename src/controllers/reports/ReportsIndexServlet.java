@@ -39,8 +39,7 @@ public class ReportsIndexServlet extends HttpServlet {
         int page;
         try{
             page = Integer.parseInt(request.getParameter("page"));
-
-        }catch(Exception e){
+ }catch(Exception e){
             page = 1;
         }
         List<Report> reports = em.createNamedQuery("getAllReports", Report.class)
