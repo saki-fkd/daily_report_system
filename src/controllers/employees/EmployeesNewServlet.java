@@ -32,7 +32,7 @@ public class EmployeesNewServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
         request.setAttribute("_token", request.getSession().getId());
-        request.setAttribute("enployee", new Employee());
+        request.setAttribute("employee", new Employee());
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/employees/new.jsp");
         rd.forward(request, response);
