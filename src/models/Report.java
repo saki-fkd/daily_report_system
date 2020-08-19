@@ -58,6 +58,26 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @Column(name = "first" , nullable = true)
+    private String first ;
+
+
+    @Column(name= "end" ,nullable = true)
+    private String end;
+
+    public String getFirst() {
+        return first;
+    }
+    public void setFirst(String first) {
+        this.first = first;
+    }
+    public String getEnd() {
+        return end;
+    }
+    public void setEnd(String end) {
+        this.end = end;
+    }
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
